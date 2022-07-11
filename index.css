@@ -1,0 +1,24 @@
+body {
+    background: linear-gradient(120deg, #99f7ff, #8fecdd)
+}
+
+.column {
+    max-width: 450px;
+}
+
+label {
+    text-align: left;
+    font-weight: normal !important;
+}
+
+.ui.toggle.checkbox input:checked~label:before {
+    background-color: #00b5ad !important;
+}
+
+.ui.toggle.checkbox input:focus:checked~label:before {
+    background-color: #00b5ad !important;
+}
+
+input {
+    text-align: center !important;
+}
