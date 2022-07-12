@@ -56,10 +56,10 @@ Object.defineProperty(Array.prototype, 'random', {
 
 const newPassword = () => {
     let length = $('.ui.slider').slider('get value');
-    let includeLowercase = $('includeLowercase').checkbox('is checked');
-    let includeUppercase = $('includeUppercase').checkbox('is checked');
-    let includeNumbers = $('includeNumbers').checkbox('is checked');
-    let includeSymbols = $('includeSymbols').checkbox('is checked');
+    let includeLowercase = $('#includeLowercase').checkbox('is checked');
+    let includeUppercase = $('#includeUppercase').checkbox('is checked');
+    let includeNumbers = $('#includeNumbers').checkbox('is checked');
+    let includeSymbols = $('#includeSymbols').checkbox('is checked');
 
     let password = generatePassword(length, includeLowercase, includeUppercase, includeNumbers, includeSymbols);
     $('#password').val(password);
